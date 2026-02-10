@@ -1,0 +1,38 @@
+{
+  "name": "NearestPartner-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "vitest run --config vitest.config.ts",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "test:watch": "vitest --config vitest.config.ts",
+    "test:integration:watch": "vitest --config vitest.integration.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.0.7",
+    "@types/pg": "^8.16.0",
+    "drizzle-kit": "^0.31.8",
+    "testcontainers": "^11.11.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.17"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.1",
+    "fastify": "^5.6.2",
+    "fastify-type-provider-zod": "^6.1.0",
+    "pg": "^8.16.3",
+    "zod": "^4.3.5"
+  }
+}
