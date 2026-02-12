@@ -10,6 +10,7 @@
     "dev": "tsx watch src/server.ts",
     "generate": "drizzle-kit generate",
     "migrate": "drizzle-kit migrate",
+    "deploy": "npm run migrate && npm run start",
     "test": "npm run test:unit && npm run test:integration",
     "test:unit": "vitest run --config vitest.config.ts",
     "test:integration": "vitest run --config vitest.integration.config.ts",
