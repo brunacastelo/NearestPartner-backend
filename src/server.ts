@@ -1,5 +1,5 @@
 // src/server.ts
-import { buildApp } from "./buildApp";
+import { buildApp } from "./buildApp.js";
 
 const app = buildApp();
 

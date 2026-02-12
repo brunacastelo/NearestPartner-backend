@@ -1,1 +1,25 @@
+# Dependências
 node_modules/
+
+# Build (O código compilado)
+dist/
+
+# Arquivos gerados pelo compilador TS fora da dist (limpeza)
+src/**/*.js
+src/**/*.js.map
+src/**/*.d.ts
+test/**/*.js
+test/**/*.js.map
+test/**/*.d.ts
+*.js
+*.js.map
+*.d.ts
+!drizzle.config.ts # Não ignore o arquivo de config original se for TS
+
+# Variáveis de ambiente
+.env
+.env.*
+
+# Logs e Cache
+npm-debug.log*
+.eslintcache

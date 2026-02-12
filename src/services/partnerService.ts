@@ -1,4 +1,4 @@
-import { PartnerModel } from "../models/partnerModel";
+import { PartnerModel } from "../models/partnerModel.js";
 import { db } from '../db/index.js';
 import { sql } from "drizzle-orm";
 import { partners } from "../db/schema.js";

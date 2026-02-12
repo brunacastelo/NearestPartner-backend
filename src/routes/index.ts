@@ -3,7 +3,7 @@ import { ZodTypeProvider } from 'fastify-type-provider-zod';
 import { z } from 'zod';
 
 import { PartnersController } from "../controllers/partnersControllers.js";
-import { PartnerService } from "../services/partnerService";
+import { PartnerService } from "../services/partnerService.js";
 import { PartnerModel } from "../models/partnerModel.js";
 
 export default async function partnersRoutes(app: FastifyInstance) {

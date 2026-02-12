@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",          // Importante para "type": "module"
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",            // Onde o código convertido vai morar
+    "rootDir": "./src",            // Onde seu código TS está
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"]          // Inclui tudo dentro da pasta src
+}

@@ -1,7 +1,7 @@
 import type { FastifyReply, FastifyRequest } from "fastify";
 
-import { PartnerService } from "../services/partnerService";
-import { PartnerModel } from "../models/partnerModel";
+import { PartnerService } from "../services/partnerService.js";
+import { PartnerModel } from "../models/partnerModel.js";
 
 export class PartnersController {
     constructor(

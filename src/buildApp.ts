@@ -5,7 +5,7 @@ import type { ZodTypeProvider } from "fastify-type-provider-zod";
 import { serializerCompiler, validatorCompiler } from "fastify-type-provider-zod";
 
 import partnersRoutes from "./routes/index.js";
-import { errorHandler } from "./errorHandler";
+import { errorHandler } from "./errorHandler.js";
 
 export function buildApp({ db }: { db?: any } = {}) {
   const app = Fastify({ logger: true }).withTypeProvider<ZodTypeProvider>();
